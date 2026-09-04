@@ -1,29 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-footer{
+main {
+    position: relative;
+    width: 1280px;
+    min-height: 570px; 
+    background: #B5E0FD;
+    padding: 20px 30px;
+}
+
+.city-country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 493px;
+    margin: 0 auto 20px auto; /* 20px відступ знизу до контенту */
+    padding: 20px 0px;
+    gap: 10px;
+
+    background: #89CEFB;
+    border: 5px solid #5DBBFA;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+/* Контейнер для розміщення списку днів та основного блоку поруч */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.days-list {
+    display: flex;
+    width: 195px;
+    height: auto;
+    flex-direction: column;
+}
+
+.day-item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    gap: 4px;
+    transition: 0.3s;
+
+    width: 195px;
+    height: 55px;
+
+    background: #89CEFB;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.day-item:hover {
+    background: #5DBBFA;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+/* Виправлений блок відображення погоди */
+.weather-main {
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    padding: 20px 45px;
+    padding: 33px 40px;
+    gap: 49px;
+    
+    /* Прибрано position: absolute, top, left, height */
+    width: 100%;
+    min-height: 410px;
+
+    background: #5DBBFA;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.weather-info {
+    width: 218px;
+}
+
+.some-else {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    gap: 118px;
+    width: 196px;
+    height: 124px;
+    background: #D9D9D9;
+    margin-bottom: 20px;
+    
+}
+
+.stats-gird {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    word-break: break-word;
+
+    width: 100px;
+    height: 100px;
+    background: #89CEFB;
+    opacity: 0.7;
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.stat h3 {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.stat p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 683px;
+    height: 343px;
+    background: #D9D9D9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    z-index: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px;
+    margin: 0;
+    gap: 40px;
 
     position: relative;
     width: 1280px;
-    height: 144px;
+    min-height: 144px;
 
     background: rgba(93, 187, 250, 0.7);
 }
 
-.disclamer{
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    height: 124px;
+.logo-footer {
+    max-height: 70px;
+    width: auto;
+    margin: 0;
+    padding: 0;
 }
 
-.logo-footer{
-    margin: 10px;
-    padding: 20px;
-    text-align: center;
+.disclamer {
+    max-width: 260px;
+    font-size: 13px;
+
 }
