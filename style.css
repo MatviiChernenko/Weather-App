@@ -17,7 +17,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 493px;
-    margin: 0 auto 20px auto; /* 20px відступ знизу до контенту */
+    margin: 0 auto 20px auto;
     padding: 20px 0px;
     gap: 10px;
 
@@ -27,7 +27,7 @@ main {
     border-radius: 12px;
 }
 
-/* Контейнер для розміщення списку днів та основного блоку поруч */
+
 .content-wrapper {
     display: flex;
     flex-direction: row;
@@ -66,7 +66,7 @@ main {
     border-radius: 20px;
 }
 
-/* Виправлений блок відображення погоди */
+
 .weather-main {
     display: flex;
     flex-direction: row;
@@ -74,7 +74,6 @@ main {
     padding: 33px 40px;
     gap: 49px;
     
-    /* Прибрано position: absolute, top, left, height */
     width: 100%;
     min-height: 410px;
 
@@ -117,7 +116,6 @@ main {
     width: 100px;
     height: 100px;
     background: #89CEFB;
-    opacity: 0.7;
     box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
 }
@@ -151,6 +149,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     padding: 20px 45px;
     margin: 0;
     gap: 40px;
@@ -167,6 +166,11 @@ footer {
     width: auto;
     margin: 0;
     padding: 0;
+}
+
+.color-p:hover{
+    transition: 0.3s;
+    color: white; 
 }
 
 .disclamer {
